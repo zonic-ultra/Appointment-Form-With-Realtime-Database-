@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment Form</title>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <div class="form">
+      <h1 class="form-title">Appointment Form</h1>
+
+      <div class="main-user-info">
+        <div class="user-input-box">
+          <label for="fullName">Full Name</label>
+          <input
+            type="text"
+            id="fullName"
+            name="Full_Name"
+            placeholder="Enter your surname first"
+          />
+        </div>
+        <div class="user-input-box">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="Age" />
+        </div>
+        <div class="user-input-box">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            placeholder="Enter Email"
+          />
+        </div>
+        <div class="user-input-box">
+          <label for="Address">Address</label>
+          <input
+            type="text"
+            id="address"
+            name="Address"
+            placeholder="Enter Address"
+          />
+        </div>
+        <div class="user-input-box">
+          <label for="phoneNumber">Phone Number</label>
+          <input
+            type="text"
+            id="cnumber"
+            name="Contact_Number"
+            placeholder="Enter Phone Number"
+          />
+        </div>
+
+        <div class="user-input-box">
+          <label for="date_time">What date and time work best for you?</label>
+          <input type="datetime-local" id="date_time" name="Date_Time" />
+        </div>
+        <div class="user-input-box">
+          <label for="gender">Gender</label>
+          <input type="text" id="gender" name="gender" />
+        </div>
+        <div class="user-input-box">
+          <label for="message">What services ae interested in ?</label>
+          <textarea id="msgcontent" cols="38.5" rows="5"></textarea>
+        </div>
+      </div>
+
+      <div class="form-submit-btn">
+        <button id="insert">Submit</button>
+        <button id="search">Search</button>
+        <button id="update">Update</button>
+        <button id="delete">Delete</button>
+      </div>
+    </div>
+
+    <script src="'https://www.gstatic.com/firebasejs/10.8.0/firebase.app.js'"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+    <script src="firebaseConfig.js"></script>
+
+    <script src="crud.js"></script>
+  </body>
+</html>
